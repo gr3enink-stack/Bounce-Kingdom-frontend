@@ -1,0 +1,109 @@
+.cookie-consent {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  padding: 1.5rem;
+  z-index: 1000;
+  transform: translateY(100%);
+  animation: slideUp 0.5s forwards;
+}
+
+@keyframes slideUp {
+  to {
+    transform: translateY(0);
+  }
+}
+
+.consent-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+}
+
+.consent-content p {
+  flex: 1;
+  min-width: 300px;
+  font-family: 'Nunito', 'Open Sans', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.consent-content a {
+  color: #ffd166;
+  text-decoration: underline;
+}
+
+.consent-content a:hover {
+  color: #ffc44d;
+}
+
+.consent-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.accept-btn, .reject-btn {
+  padding: 0.8rem 1.5rem;
+  border-radius: 50px;
+  font-family: 'Nunito', 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.accept-btn {
+  background-color: #06d6a0;
+  color: white;
+}
+
+.accept-btn:hover {
+  background-color: #05b58a;
+  transform: translateY(-2px);
+}
+
+.reject-btn {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.reject-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .cookie-consent {
+    padding: 1rem;
+  }
+  
+  .consent-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .consent-content p {
+    min-width: auto;
+    font-size: 0.9rem;
+  }
+  
+  .consent-buttons {
+    justify-content: center;
+  }
+  
+  .accept-btn, .reject-btn {
+    padding: 0.7rem 1.2rem;
+    font-size: 0.9rem;
+  }
+}

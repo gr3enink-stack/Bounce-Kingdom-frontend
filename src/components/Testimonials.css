@@ -1,0 +1,210 @@
+.testimonials {
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #118ab2 0%, #073b4c 100%);
+  color: white;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.testimonials .section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.testimonials .section-header h2 {
+  font-family: 'Comic Neue', 'Fredoka One', cursive;
+  font-size: 2.5rem;
+  color: #ffd166;
+  margin-bottom: 1rem;
+}
+
+.testimonials .section-header p {
+  font-family: 'Nunito', 'Open Sans', sans-serif;
+  font-size: 1.2rem;
+  color: white !important; /* Ensuring white color with !important */
+  font-weight: 500; /* Added for better visibility */
+}
+
+.testimonials-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.testimonial-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 2rem;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s ease;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-10px);
+}
+
+.single-testimonial {
+  text-align: center;
+}
+
+.review-text p {
+  font-family: 'Nunito', 'Open Sans', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  font-style: italic;
+  color: white;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.review-author {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.author-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #ffd166;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1rem;
+  font-family: 'Comic Neue', 'Fredoka One', cursive;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.author-info h4 {
+  font-family: 'Nunito', 'Open Sans', sans-serif;
+  font-size: 1.2rem;
+  margin-bottom: 0.3rem;
+  color: white;
+}
+
+.author-info p {
+  font-family: 'Nunito', 'Open Sans', sans-serif;
+  color: #e0e0e0; /* Changed from #ccc to a lighter gray for better contrast */
+  margin: 0;
+}
+
+.review-rating {
+  color: #ffd166;
+  font-size: 1.3rem;
+}
+
+/* Tablet responsive */
+@media (max-width: 1024px) {
+  .testimonials {
+    padding: 3rem 1.5rem;
+  }
+  
+  .testimonials .section-header h2 {
+    font-size: 2.2rem;
+  }
+  
+  .testimonials .section-header p {
+    font-size: 1.1rem;
+  }
+  
+  .testimonials-container {
+    gap: 1.5rem;
+  }
+  
+  .testimonial-card {
+    padding: 1.5rem;
+  }
+  
+  .author-avatar {
+    width: 50px;
+    height: 50px;
+    font-size: 1.2rem;
+  }
+  
+  .author-info h4 {
+    font-size: 1.1rem;
+  }
+  
+  .review-text p {
+    font-size: 1rem;
+  }
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .testimonials {
+    padding: 2rem 1rem;
+  }
+  
+  .testimonials .section-header h2 {
+    font-size: 2rem;
+  }
+  
+  .testimonials-container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .testimonial-card {
+    padding: 1.5rem;
+    min-height: 250px;
+  }
+}
+
+/* Small mobile responsive */
+@media (max-width: 480px) {
+  .testimonials {
+    padding: 1.5rem 0.8rem;
+  }
+  
+  .testimonials .section-header {
+    margin-bottom: 2rem;
+  }
+  
+  .testimonials .section-header h2 {
+    font-size: 1.8rem;
+  }
+  
+  .testimonials .section-header p {
+    font-size: 1rem;
+  }
+  
+  .testimonials-container {
+    gap: 1rem;
+  }
+  
+  .testimonial-card {
+    padding: 1rem;
+    min-height: 220px;
+  }
+  
+  .author-avatar {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+    margin-right: 0.8rem;
+  }
+  
+  .author-info h4 {
+    font-size: 1rem;
+  }
+  
+  .review-text p {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+  
+  .review-rating {
+    font-size: 1.1rem;
+  }
+}

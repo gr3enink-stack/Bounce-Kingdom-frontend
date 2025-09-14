@@ -1,0 +1,64 @@
+.single-testimonial {
+  text-align: center;
+}
+
+.review-text p {
+  font-family: 'Nunito', 'Open Sans', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  font-style: italic;
+  color: white;
+}
+
+.review-author {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.author-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #ffd166;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1rem;
+  font-family: 'Comic Neue', 'Fredoka One', cursive;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.author-info h4 {
+  font-family: 'Nunito', 'Open Sans', sans-serif;
+  font-size: 1.2rem;
+  margin-bottom: 0.3rem;
+  color: white;
+}
+
+.author-info p {
+  font-family: 'Nunito', 'Open Sans', sans-serif;
+  color: #ccc;
+  margin: 0;
+}
+
+.review-rating {
+  color: #ffd166;
+  font-size: 1.3rem;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .author-avatar {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+  
+  .author-info h4 {
+    font-size: 1rem;
+  }
+}

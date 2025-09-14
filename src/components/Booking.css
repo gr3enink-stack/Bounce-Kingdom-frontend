@@ -1,0 +1,461 @@
+.booking {
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #06d6a0 0%, #05b58a 100%);
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-header h2 {
+  font-family: 'Comic Neue', 'Fredoka One', cursive;
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.section-header p {
+  font-family: 'Nunito', 'Open Sans', sans-serif;
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.booking-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.progress-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  background-color: #f8f9fa;
+  position: relative;
+}
+
+.progress-bar::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 2rem;
+  right: 2rem;
+  height: 4px;
+  background-color: #e9ecef;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.progress-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+}
+
+.progress-step .step-number {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #e9ecef;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Nunito', 'Open Sans', sans-serif;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #6c757d;
+}
+
+.progress-step .step-label {
+  font-family: 'Nunito', 'Open Sans', sans-serif;
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+.progress-step.active .step-number {
+  background-color: #06d6a0;
+  color: white;
+}
+
+.progress-step.active .step-label {
+  color: #06d6a0;
+  font-weight: 700;
+}
+
+.booking-step {
+  padding: 2rem;
+}
+
+.booking-step form {
+  width: 100%;
+  max-width: 100%;
+}
+
+.booking-step h3 {
+  font-family: 'Comic Neue', 'Fredoka One', cursive;
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  font-family: 'Nunito', 'Open Sans', sans-serif;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 1rem;
+  border: 2px solid #e9ecef;
+  border-radius: 10px;
+  font-family: 'Nunito', 'Open Sans', sans-serif;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #06d6a0;
+}
+
+.form-row {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.form-row .form-group {
+  flex: 1;
+  margin-bottom: 0;
+}
+
+.form-navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.booking-step form:last-child .form-navigation {
+  justify-content: center;
+  gap: 1rem;
+}
+
+.prev-btn,
+.next-btn,
+.submit-btn {
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  font-family: 'Nunito', 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.prev-btn {
+  background-color: #e9ecef;
+  color: #6c757d;
+}
+
+.prev-btn:hover {
+  background-color: #dee2e6;
+}
+
+.next-btn,
+.submit-btn {
+  background-color: #ff6b6b;
+  color: white;
+}
+
+.next-btn:hover,
+.submit-btn:hover {
+  background-color: #ff5252;
+  transform: translateY(-2px);
+}
+
+.next-btn:disabled,
+.submit-btn:disabled {
+  background-color: #adb5bd;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.submit-btn {
+  background-color: #06d6a0;
+}
+
+.submit-btn:hover {
+  background-color: #05b58a;
+}
+
+.booking-summary {
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.summary-section {
+  margin-bottom: 1rem;
+}
+
+.summary-section:last-child {
+  margin-bottom: 0;
+}
+
+.summary-section h4 {
+  font-family: 'Nunito', 'Open Sans', sans-serif;
+  font-size: 1rem;
+  color: #6c757d;
+  margin-bottom: 0.3rem;
+}
+
+.summary-section p {
+  font-family: 'Nunito', 'Open Sans', sans-serif;
+  font-size: 1.1rem;
+  color: #333;
+  margin: 0;
+  font-weight: 600;
+}
+
+/* Improved form styling */
+.form-section {
+  margin-bottom: 2rem;
+}
+
+.form-section-title {
+  font-family: 'Nunito', 'Open Sans', sans-serif;
+  font-size: 1.2rem;
+  color: #06d6a0;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #e9ecef;
+}
+
+.weather-widget-container {
+  margin: 1.5rem 0;
+}
+
+.form-group .next-btn {
+  margin-top: 1rem;
+}
+
+/* Center the Check Availability button container */
+.form-section + .form-group {
+  display: flex;
+  justify-content: center;
+}
+
+.form-section + .form-group .next-btn {
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Tablet responsive */
+@media (max-width: 1024px) {
+  .booking {
+    padding: 3rem 1.5rem;
+  }
+  
+  .section-header h2 {
+    font-size: 2.2rem;
+  }
+  
+  .section-header p {
+    font-size: 1.1rem;
+  }
+  
+  .booking-container {
+    max-width: 700px;
+  }
+  
+  .progress-bar {
+    padding: 1.5rem;
+  }
+  
+  .progress-bar::before {
+    left: 1.5rem;
+    right: 1.5rem;
+  }
+  
+  .booking-step {
+    padding: 1.5rem;
+  }
+  
+  .booking-step h3 {
+    font-size: 1.6rem;
+  }
+  
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    padding: 0.8rem;
+    font-size: 0.95rem;
+  }
+  
+  .prev-btn,
+  .next-btn,
+  .submit-btn {
+    padding: 0.9rem 1.8rem;
+    font-size: 0.95rem;
+  }
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .booking {
+    padding: 2rem 1rem;
+  }
+  
+  .section-header h2 {
+    font-size: 2rem;
+  }
+  
+  .progress-bar {
+    padding: 1.5rem 1rem;
+  }
+  
+  .progress-bar::before {
+    left: 1rem;
+    right: 1rem;
+  }
+  
+  .booking-step {
+    padding: 1.5rem;
+  }
+  
+  .form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+  
+  .form-row .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-navigation {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .prev-btn,
+  .next-btn,
+  .submit-btn {
+    width: 100%;
+  }
+  
+  .weather-widget-container {
+    margin: 1rem 0;
+  }
+  
+  /* Ensure the Check Availability button doesn't overflow on mobile */
+  .form-section + .form-group .next-btn {
+    max-width: 100%;
+  }
+}
+
+/* Small mobile responsive */
+@media (max-width: 480px) {
+  .booking {
+    padding: 1.5rem 0.8rem;
+  }
+  
+  .section-header {
+    margin-bottom: 2rem;
+  }
+  
+  .section-header h2 {
+    font-size: 1.8rem;
+  }
+  
+  .section-header p {
+    font-size: 1rem;
+  }
+  
+  .progress-bar {
+    padding: 1rem 0.8rem;
+  }
+  
+  .progress-bar::before {
+    left: 0.8rem;
+    right: 0.8rem;
+  }
+  
+  .progress-step .step-number {
+    width: 35px;
+    height: 35px;
+    font-size: 0.9rem;
+  }
+  
+  .progress-step .step-label {
+    font-size: 0.8rem;
+  }
+  
+  .booking-step {
+    padding: 1rem;
+  }
+  
+  .booking-step h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+  
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  .form-row {
+    margin-bottom: 1rem;
+  }
+  
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    padding: 0.7rem;
+    font-size: 0.9rem;
+  }
+  
+  .prev-btn,
+  .next-btn,
+  .submit-btn {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
+  }
+  
+  .form-section {
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-section-title {
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  /* Ensure the Check Availability button doesn't overflow on small screens */
+  .form-section + .form-group .next-btn {
+    max-width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}

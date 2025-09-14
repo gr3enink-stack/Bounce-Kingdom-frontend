@@ -1,0 +1,113 @@
+.responsive-layout {
+  max-width: var(--max-width, 1200px);
+  margin: 0 auto;
+  padding: var(--padding, 0 2rem);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Tablet responsive */
+@media (max-width: 1024px) {
+  .responsive-layout {
+    padding: var(--padding, 0 1.5rem);
+  }
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .responsive-layout {
+    padding: var(--padding, 0 1rem);
+  }
+}
+
+/* Small mobile responsive */
+@media (max-width: 480px) {
+  .responsive-layout {
+    padding: var(--padding, 0 0.8rem);
+  }
+}
+
+/* Full width layout */
+.responsive-layout.full-width {
+  max-width: 100%;
+  padding: var(--padding, 0);
+}
+
+/* Narrow layout */
+.responsive-layout.narrow {
+  max-width: 800px;
+}
+
+/* Wide layout */
+.responsive-layout.wide {
+  max-width: 1400px;
+}
+
+/* No padding layout */
+.responsive-layout.no-padding {
+  padding: 0;
+}
+
+/* Centered content */
+.responsive-layout.centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Flexible padding */
+.responsive-layout.padding-small {
+  padding: var(--padding, 0 1rem);
+}
+
+.responsive-layout.padding-medium {
+  padding: var(--padding, 0 2rem);
+}
+
+.responsive-layout.padding-large {
+  padding: var(--padding, 0 3rem);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .responsive-layout.padding-small {
+    padding: var(--padding, 0 0.8rem);
+  }
+  
+  .responsive-layout.padding-medium {
+    padding: var(--padding, 0 1.5rem);
+  }
+  
+  .responsive-layout.padding-large {
+    padding: var(--padding, 0 2rem);
+  }
+}
+
+@media (max-width: 768px) {
+  .responsive-layout.padding-small {
+    padding: var(--padding, 0 0.6rem);
+  }
+  
+  .responsive-layout.padding-medium {
+    padding: var(--padding, 0 1rem);
+  }
+  
+  .responsive-layout.padding-large {
+    padding: var(--padding, 0 1.5rem);
+  }
+}
+
+@media (max-width: 480px) {
+  .responsive-layout.padding-small {
+    padding: var(--padding, 0 0.4rem);
+  }
+  
+  .responsive-layout.padding-medium {
+    padding: var(--padding, 0 0.8rem);
+  }
+  
+  .responsive-layout.padding-large {
+    padding: var(--padding, 0 1rem);
+  }
+}

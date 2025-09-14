@@ -1,0 +1,15 @@
+{
+  "short_name": "Bounce Kingdom",
+  "name": "Bounce Kingdom Ghana - Premier Party Rentals",
+  "icons": [
+    {
+      "src": "images/pirate-ship.jpg",
+      "sizes": "512x512",
+      "type": "image/jpg"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#ff6b6b",
+  "background_color": "#ffffff"
+}

@@ -1,0 +1,155 @@
+.availability-checker {
+  background-color: #f8f9fa;
+  border-radius: 15px;
+  padding: 2rem;
+  margin: 2rem 0;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.availability-checker h3 {
+  font-family: 'Nunito', 'Open Sans', sans-serif;
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.availability-info {
+  background-color: white;
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.availability-info p {
+  font-family: 'Nunito', 'Open Sans', sans-serif;
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+.availability-info strong {
+  color: #333;
+}
+
+.check-btn, .book-btn, .try-again-btn {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 50px;
+  font-family: 'Nunito', 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.check-btn, .book-btn {
+  background-color: #06d6a0;
+  color: white;
+  box-shadow: 0 4px 15px rgba(6, 214, 160, 0.3);
+}
+
+.check-btn:hover, .book-btn:hover {
+  background-color: #05b58a;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(6, 214, 160, 0.4);
+}
+
+.try-again-btn {
+  background-color: #ff6b6b;
+  color: white;
+  box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+}
+
+.try-again-btn:hover {
+  background-color: #ff5252;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(255, 107, 107, 0.4);
+}
+
+.checking {
+  text-align: center;
+  padding: 2rem;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid rgba(6, 214, 160, 0.3);
+  border-top: 5px solid #06d6a0;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 0 auto 1rem;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.checking p {
+  font-family: 'Nunito', 'Open Sans', sans-serif;
+  font-size: 1.1rem;
+  color: #6c757d;
+  margin: 0;
+}
+
+.result {
+  text-align: center;
+  padding: 2rem;
+  border-radius: 15px;
+}
+
+.result.available {
+  background-color: rgba(6, 214, 160, 0.1);
+}
+
+.result.unavailable {
+  background-color: rgba(255, 107, 107, 0.1);
+}
+
+.status-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.result h4 {
+  font-family: 'Nunito', 'Open Sans', sans-serif;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.result.available h4 {
+  color: #06d6a0;
+}
+
+.result.unavailable h4 {
+  color: #ff6b6b;
+}
+
+.result p {
+  font-family: 'Nunito', 'Open Sans', sans-serif;
+  font-size: 1.1rem;
+  color: #6c757d;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .availability-checker {
+    padding: 1.5rem;
+  }
+  
+  .availability-info {
+    padding: 1rem;
+  }
+  
+  .availability-info p {
+    font-size: 1rem;
+  }
+  
+  .result h4 {
+    font-size: 1.5rem;
+  }
+}
