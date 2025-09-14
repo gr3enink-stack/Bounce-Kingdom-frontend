@@ -1,0 +1,129 @@
+.weather-widget {
+  background: linear-gradient(135deg, #4ecdc4 0%, #1a936f 100%);
+  color: white;
+  border-radius: 15px;
+  padding: 1.5rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  margin: 2rem 0;
+}
+
+.weather-header h3 {
+  font-family: 'Nunito', 'Open Sans', sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+.weather-header p {
+  font-family: 'Nunito', 'Open Sans', sans-serif;
+  font-size: 0.9rem;
+  margin: 0;
+  opacity: 0.9;
+}
+
+.weather-content {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.weather-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.weather-icon {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.weather-temp {
+  font-family: 'Comic Neue', 'Fredoka One', cursive;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.weather-condition {
+  font-family: 'Nunito', 'Open Sans', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.weather-location {
+  font-family: 'Nunito', 'Open Sans', sans-serif;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  opacity: 0.9;
+}
+
+.weather-advice {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  padding: 1rem;
+  font-family: 'Nunito', 'Open Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.good-weather {
+  color: #ffd166;
+}
+
+.bad-weather {
+  color: #ff6b6b;
+}
+
+.neutral-weather {
+  color: #ffd166;
+}
+
+.weather-loading, .weather-error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.weather-spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  border-top: 4px solid white;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 1rem;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.weather-loading p, .weather-error p {
+  font-family: 'Nunito', 'Open Sans', sans-serif;
+  font-size: 1.1rem;
+  margin: 0;
+  text-align: center;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .weather-widget {
+    padding: 1rem;
+  }
+  
+  .weather-header h3 {
+    font-size: 1.3rem;
+  }
+  
+  .weather-temp {
+    font-size: 2rem;
+  }
+  
+  .weather-condition {
+    font-size: 1rem;
+  }
+}

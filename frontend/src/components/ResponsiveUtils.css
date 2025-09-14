@@ -1,0 +1,208 @@
+/* Comprehensive Responsive Utility Classes */
+
+/* Hide elements on specific screen sizes */
+.hide-mobile {
+  display: block;
+}
+
+.hide-tablet {
+  display: block;
+}
+
+.hide-desktop {
+  display: none;
+}
+
+/* Tablet responsive */
+@media (max-width: 1024px) {
+  .hide-tablet {
+    display: none !important;
+  }
+  
+  .show-tablet {
+    display: block !important;
+  }
+  
+  .text-center-tablet {
+    text-align: center !important;
+  }
+  
+  .flex-column-tablet {
+    flex-direction: column !important;
+  }
+  
+  .full-width-tablet {
+    width: 100% !important;
+  }
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .hide-mobile {
+    display: none !important;
+  }
+  
+  .show-mobile {
+    display: block !important;
+  }
+  
+  .text-center-mobile {
+    text-align: center !important;
+  }
+  
+  .flex-column-mobile {
+    flex-direction: column !important;
+  }
+  
+  .full-width-mobile {
+    width: 100% !important;
+  }
+  
+  .padded-mobile {
+    padding: 1rem !important;
+  }
+  
+  .margin-mobile {
+    margin: 1rem !important;
+  }
+}
+
+/* Small mobile responsive */
+@media (max-width: 480px) {
+  .hide-small-mobile {
+    display: none !important;
+  }
+  
+  .show-small-mobile {
+    display: block !important;
+  }
+  
+  .text-center-small-mobile {
+    text-align: center !important;
+  }
+  
+  .flex-column-small-mobile {
+    flex-direction: column !important;
+  }
+  
+  .full-width-small-mobile {
+    width: 100% !important;
+  }
+  
+  .padded-small-mobile {
+    padding: 0.8rem !important;
+  }
+  
+  .margin-small-mobile {
+    margin: 0.8rem !important;
+  }
+  
+  .font-small-mobile {
+    font-size: 0.9rem !important;
+  }
+}
+
+/* Responsive grid utilities */
+.grid-1 {
+  grid-template-columns: 1fr;
+}
+
+.grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* Tablet responsive grid */
+@media (max-width: 1024px) {
+  .grid-2-tablet {
+    grid-template-columns: 1fr;
+  }
+  
+  .grid-3-tablet {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .grid-4-tablet {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile responsive grid */
+@media (max-width: 768px) {
+  .grid-2-mobile,
+  .grid-3-mobile,
+  .grid-4-mobile {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Responsive spacing utilities */
+.padding-1 { padding: 1rem; }
+.padding-2 { padding: 2rem; }
+.padding-3 { padding: 3rem; }
+
+.margin-1 { margin: 1rem; }
+.margin-2 { margin: 2rem; }
+.margin-3 { margin: 3rem; }
+
+/* Tablet responsive spacing */
+@media (max-width: 1024px) {
+  .padding-1-tablet { padding: 0.8rem; }
+  .padding-2-tablet { padding: 1.5rem; }
+  .padding-3-tablet { padding: 2rem; }
+  
+  .margin-1-tablet { margin: 0.8rem; }
+  .margin-2-tablet { margin: 1.5rem; }
+  .margin-3-tablet { margin: 2rem; }
+}
+
+/* Mobile responsive spacing */
+@media (max-width: 768px) {
+  .padding-1-mobile { padding: 0.7rem; }
+  .padding-2-mobile { padding: 1rem; }
+  .padding-3-mobile { padding: 1.5rem; }
+  
+  .margin-1-mobile { margin: 0.7rem; }
+  .margin-2-mobile { margin: 1rem; }
+  .margin-3-mobile { margin: 1.5rem; }
+}
+
+/* Small mobile responsive spacing */
+@media (max-width: 480px) {
+  .padding-1-small-mobile { padding: 0.5rem; }
+  .padding-2-small-mobile { padding: 0.8rem; }
+  .padding-3-small-mobile { padding: 1rem; }
+  
+  .margin-1-small-mobile { margin: 0.5rem; }
+  .margin-2-small-mobile { margin: 0.8rem; }
+  .margin-3-small-mobile { margin: 1rem; }
+}
+
+/* Responsive text utilities */
+.text-small { font-size: 0.8rem; }
+.text-medium { font-size: 1rem; }
+.text-large { font-size: 1.2rem; }
+.text-xlarge { font-size: 1.5rem; }
+
+/* Mobile responsive text */
+@media (max-width: 768px) {
+  .text-small-mobile { font-size: 0.7rem; }
+  .text-medium-mobile { font-size: 0.9rem; }
+  .text-large-mobile { font-size: 1rem; }
+  .text-xlarge-mobile { font-size: 1.2rem; }
+}
+
+/* Small mobile responsive text */
+@media (max-width: 480px) {
+  .text-small-small-mobile { font-size: 0.6rem; }
+  .text-medium-small-mobile { font-size: 0.8rem; }
+  .text-large-small-mobile { font-size: 0.9rem; }
+  .text-xlarge-small-mobile { font-size: 1rem; }
+}

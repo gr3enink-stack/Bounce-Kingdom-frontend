@@ -1,0 +1,102 @@
+.responsive-card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.responsive-card.elevated {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.responsive-card.hoverable:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.responsive-card-content {
+  padding: 1.5rem;
+}
+
+/* Tablet responsive */
+@media (max-width: 1024px) {
+  .responsive-card {
+    border-radius: 12px;
+  }
+  
+  .responsive-card-content {
+    padding: 1.2rem;
+  }
+  
+  .responsive-card.elevated {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+  }
+  
+  .responsive-card.hoverable:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+  }
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .responsive-card {
+    border-radius: 10px;
+  }
+  
+  .responsive-card-content {
+    padding: 1rem;
+  }
+  
+  .responsive-card.elevated {
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .responsive-card.hoverable:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  }
+}
+
+/* Small mobile responsive */
+@media (max-width: 480px) {
+  .responsive-card {
+    border-radius: 8px;
+  }
+  
+  .responsive-card-content {
+    padding: 0.8rem;
+  }
+  
+  .responsive-card.elevated {
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+  }
+  
+  .responsive-card.hoverable:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+}
+
+/* Card variations */
+.responsive-card.primary {
+  background: linear-gradient(135deg, #ff9a8b 0%, #ff6b6b 100%);
+  color: white;
+}
+
+.responsive-card.secondary {
+  background: linear-gradient(135deg, #ffd166 0%, #ffb347 100%);
+  color: #333;
+}
+
+.responsive-card.tertiary {
+  background: linear-gradient(135deg, #06d6a0 0%, #05b58a 100%);
+  color: white;
+}
+
+.responsive-card.quaternary {
+  background: linear-gradient(135deg, #118ab2 0%, #073b4c 100%);
+  color: white;
+}

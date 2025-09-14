@@ -1,0 +1,83 @@
+.countdown-timer {
+  background: linear-gradient(135deg, #ff6b6b 0%, #ff5252 100%);
+  color: white;
+  border-radius: 15px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  margin: 2rem 0;
+}
+
+.countdown-timer h3 {
+  font-family: 'Nunito', 'Open Sans', sans-serif;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #ffd166;
+}
+
+.timer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.time-unit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  padding: 1rem;
+  min-width: 80px;
+}
+
+.time-value {
+  font-family: 'Comic Neue', 'Fredoka One', cursive;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.time-label {
+  font-family: 'Nunito', 'Open Sans', sans-serif;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 0.5rem;
+}
+
+.time-separator {
+  font-family: 'Comic Neue', 'Fredoka One', cursive;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .countdown-timer {
+    padding: 1.5rem;
+  }
+  
+  .countdown-timer h3 {
+    font-size: 1.5rem;
+  }
+  
+  .time-unit {
+    min-width: 60px;
+    padding: 0.8rem;
+  }
+  
+  .time-value {
+    font-size: 1.8rem;
+  }
+  
+  .time-label {
+    font-size: 0.7rem;
+  }
+  
+  .time-separator {
+    font-size: 1.5rem;
+  }
+}
